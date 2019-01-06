@@ -5,130 +5,138 @@
 .navegacion {
 	background: #A29D9E;
 	display: flex;
-  	align-items: center;
   	padding: 0 6px;
   	height: 55px;
+
+  	&__lista{
+  		display: flex;
+  		list-style: none;
+  		padding: 10px;
+  		width: 187%;
+  	}
+  	&__lista a{
+  		text-decoration: none;
+     	color: black;
+     	padding-right: 20px;
+     	font-size: 15px;
+     	
+
+  	}
+
 	
 	&__input {
-	    position: relative;
-	    left: 21%;
-	    width: 200px;
-	    height: 35px;
-	    margin-top: 16px;
+	 	
+	 	border: none;
+	 	border-radius: 5px;
+	    width: 250px;
+	   	height: 30px;
+	    margin-left: 30px;
+	    margin-top: -13px;
+	    padding-left: 10px;
+	    
 	}
-	&__opciones {
-       margin: 0px;
-       position: relative;
-       left: 2%;
-	   li {
-		   display: inline;
-		   padding-right: 40px;
-    	   font-size: 14px;
-		}
-	}
-}
-
-.container {
-	display: flex;
-	margin-top: 30px;
-}
-
-.primero {
-		margin-left: 10px;
-		width: 23%;
+	&__iconos{
 		display: flex;
-        flex-flow: column;
-    &__item1{
-    	height: 420px;
-    }
-    &__nombre {
-    	margin-left: 32px;
-    	margin-bottom: 10px;
-    }
-    &__login {
-    	color: grey;
-    	margin-left: 32px;
-    	position: relative;
-    	bottom: 22px;
-    }
-    &__follow {
-	    width: 270px;
-	    height: 42px;
-	    position: relative;
-	    left: 32px;
-	    border: 1px solid#D7DBDD;
-        background: linear-gradient(white, #D7DBDD);
-        bottom: 30px; 
-        display: none; 
-    }
-    &__reporte {
-    	color: grey;
-    	font-size: 16px;
-    	margin-left: 32px;
-    	text-decoration: none;
-    	display: none;
-    }
-    &__linea {
-    	width: 270px;
-    	margin-left: 32px;
-    	position: relative;
-    	top: 12px;
-    	display: none;
-    }
-	&__datos {
-		position: relative;
-    	top: 57px;
+     	list-style: none;
+    	padding-left: 470px;
 	}
-	&__foto {
-	width: 270px;
-    margin-left: 32px;
-    border-radius: 2%;
+	&__icon{
+		padding-right: 10px;
+	}
+	&__perfil{
+	 	width: 16%;
+   		
 	}
 }
 
-.segundo {
-		width: 75%;
-		border-top: 1px solid #D7DBDD;
-	&__repos {
-		border-bottom: 1px solid #D7DBDD;
-		p {
-			font-size: 22px;
-		}
+.container{
+	display: flex;
+  	flex: wrap;
+  	margin: 20px;
+
+  	&__perfil{
+  		width: 23%;
+    	margin:0px 35px;
+  	}
+  	&__bio{
+    color: #666666;
+  	}
+
+ 	&__img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 	}
+
+  &__repositorio{
+    width: 77%;
+
+  }
+
+  &__menu{
+    height: 150px;
+  }
+
+  &__list{
+    margin-top: 20px;
+    margin-right: 35px;
+  }
+
+  &__desc{
+      color: #666666;
+  }
+
+}
+h1{
+  margin-bottom: 5px;
 }
 
+h3{
+  color: #666666;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
 
+hr{
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
-.compañia {
-	    font-weight: bold;
-		margin-left: 32px;
-		font-size: 18px;
-	}
-.lugar{
-		margin-left: 32px;
-		font-size: 18px;
-   		position: relative;
-        bottom: 15px;
-	}
-.correo {
-		color: blue;
-		left: 32px;
-		font-size: 18px;
-        position: relative;
-        bottom: 30px;
-	}
-.pagina {
-		color: blue;
-        position: relative;
-        left: 32px;
-        bottom: 40px;
-        font-size: 18px;
-	}
+button{
+  background-color: #F4F7F9;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  width: 300px;
+  margin-top: 20px;
+}
 
+p{
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+h2{
+  margin-bottom: 10px;
+  color: blue;
+}
+span{
+  margin-right: 25px;
+  font-size: 12px;
+  color: #666666;
+}
+
+.fas{
+	color: black;
+}
 .fa-github {
 		font-size: 35px;
     	position: relative;
     	left: 20px;
+    	margin-top: 9px;
 	}
 		
 

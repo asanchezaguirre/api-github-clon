@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
    <head>
       <meta charset="utf-8">
@@ -8,45 +9,30 @@
    <body>
       <nav class="navegacion">
         <i class="fab fa-github"></i>
-        <form class="navegacion__form">
-          <input class="navegacion__input" type="text" name="username" placeholder="Search Github"/>
-        </form>
-        <ul class="navegacion__opciones">
-          <li>Pull Requests</li>
-          <li>Issues</li>
-          <li>Gist</li>
+        <ul class="navegacion__lista">
+          <input class="navegacion__input" type="search" name="username" placeholder="Search Github"/>
+          <li class ="navegacion__item"><a href="#">Pull Requests</a></li>
+          <li class ="navegacion__item"><a href="#">Issues</a></li>
+          <li class ="navegacion__item"><a href="#">Gist</a></li>
         </ul>
-        <i class="fas fa-bell"></i>
-        <i class="fas fa-plus"></i>
-        <i class="fas fa-caret-down"></i>
-        <img src="#">
-        <i class="fas fa-caret-down"></i>
+        <ul class="navegacion__iconos">
+          <li class="navegacion__icon"><i class="fas fa-bell"></i></li>
+          <li class="navegacion__icon"><i class="fas fa-plus"></i></li>
+          <li class="navegacion__icon"><i class="fas fa-caret-down"></i></li>
+          <img class="navegacion__perfil"src="https://avatars1.githubusercontent.com/u/44782476?s=40&v=4">
+          <li class="navegacion__icon"><i class="fas fa-caret-down"></i></li>
+        </ul>
       </nav>
       <div class="container">
-        <div class="primero">
-            <div class="primero__item1">
-               <div class="primero__foto"></div>
-               <h1 class="primero__nombre"></h1>
-               <h2 class="primero__login"></h2>
-               <button class="primero__follow">Follow</button>
-               <a class="primero__reporte" href="#">Block or report user</a>
-               <hr class="primero__linea">
-            </div>
-            <div class="primero__datos">
-              <p class= "compañia"></p>
-              <p class="lugar"></p>
-              <p class="correo"></p>
-              <p class="pagina"></p>
-            </div>
+        <div class="container__perfil">
+            
         </div>
-        <div class="segundo">
-          <div class="segundo__repos">
-            <h2></h2>
-            <p></p>
-            <p><span></span></p>
-          </div>
+        <div class="container__repositorio">
+          <div class="container__menu"></div>
+              
         </div>
       </div>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/3.6.0/superagent.min.js"></script> 
       <script src="./js/app.js"></script> 
    </body>
 </html>
